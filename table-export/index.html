@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Table Export — copy any web table to CSV or Excel | Kitebox Labs</title>
+<meta name="description" content="Free browser extension: copy any HTML table on a web page or export it to CSV in one click. Paste into Google Sheets or Excel. Works locally, no account.">
+<link rel="canonical" href="https://rialvla.github.io/kiteboxlabs/table-export/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Kitebox Labs">
+<meta property="og:title" content="Table Export — copy any web table to CSV or Excel | Kitebox Labs">
+<meta property="og:description" content="Free browser extension: copy any HTML table on a web page or export it to CSV in one click. Paste into Google Sheets or Excel. Works locally, no account.">
+<meta property="og:url" content="https://rialvla.github.io/kiteboxlabs/table-export/">
+<meta property="og:image" content="https://rialvla.github.io/kiteboxlabs/assets/logo.png">
+<link rel="icon" href="../assets/logo-256.png">
+<link rel="preload" href="../assets/bricolage-grotesque.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../assets/site.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Table Export","description":"Free browser extension: copy any HTML table on a web page or export it to CSV in one click. Paste into Google Sheets or Excel. Works locally, no account.","url":"https://rialvla.github.io/kiteboxlabs/table-export/","applicationCategory":"BrowserApplication","operatingSystem":"Chrome, Microsoft Edge, Firefox","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"publisher":{"@type":"Organization","name":"Kitebox Labs","url":"https://rialvla.github.io/kiteboxlabs/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How do I copy a table from a website into Excel or Google Sheets?","acceptedAnswer":{"@type":"Answer","text":"Open the page, click the Table Export icon and press Copy next to the table you want. Then click a cell in your spreadsheet and paste. Rows and columns arrive exactly as on the page."}},{"@type":"Question","name":"The table has merged cells. Will the columns still line up?","acceptedAnswer":{"@type":"Answer","text":"Yes. A cell that spans several rows or columns is repeated in each position it covers, so the exported table is a clean grid."}},{"@type":"Question","name":"Why does it say that no tables were found?","acceptedAnswer":{"@type":"Answer","text":"Some sites draw their tables without real table elements, and some show them inside an embedded frame. Those cannot be read yet. If a table you need is not found, send us the page address and we will look at it."}},{"@type":"Question","name":"How are numbers handled in the Excel export?","acceptedAnswer":{"@type":"Answer","text":"Numbers are stored as numbers, so sums and sorting work. The extension reads 1,200.50 on English pages and 1.200,50 on pages in languages that use a decimal comma. Values with leading zeros, such as postcodes and part numbers, stay as text so that nothing is lost."}},{"@type":"Question","name":"Is my data sent anywhere?","acceptedAnswer":{"@type":"Answer","text":"No. The page is read inside your browser, and only when you click the icon. There is no account, no analytics and no upload."}}]}</script>
+</head>
+<body class="t-table">
+<header class="top wrap">
+  <a class="brand" href="../"><img src="../assets/logo-256.png" width="34" height="34" alt="">Kitebox Labs</a>
+  <nav><a href="../#products">Tools</a><a href="../#pricing">Pricing</a><a href="../#privacy">Privacy</a><a href="../#contact">Contact</a></nav>
+</header>
+<main class="wrap">
+<div class="page-head">
+  <h1>Export any table on a web page to CSV</h1>
+  <p class="lead">Table Export finds the data tables on the page you are looking at. Each one can be saved as a CSV file or copied, ready to paste into Google Sheets or Excel with every value in its own cell.</p>
+  <div class="stores"><a class="btn" href="https://chromewebstore.google.com/detail/hhfpalogcbonjkoplmdikkgolelgajjc">Add to Chrome</a><a class="btn alt" href="https://microsoftedge.microsoft.com/addons/detail/emdhohpbhjjjipbeofofnglcaibgfpml">Add to Edge</a><a class="btn alt" href="https://addons.mozilla.org/firefox/addon/kitebox-table-export/">Add to Firefox</a></div>
+</div>
+
+<div class="shots">
+  <img src="../img/table-export-1.webp" width="1280" height="800" alt="Table Export open over a web page">
+  <div class="small"><img src="../img/table-export-2.webp" width="1280" height="800" loading="lazy" alt="Table Export screenshot 2"><img src="../img/table-export-3.webp" width="1280" height="800" loading="lazy" alt="Table Export screenshot 3"></div>
+</div>
+
+<h2>How to use it</h2>
+<ol class="steps">
+<li>Open a page with a table: a Wikipedia article, a price list, sports statistics, a report.</li>
+<li>Click the Table Export icon. Every data table on the page is listed by its title.</li>
+<li>Press CSV to download the table, or Copy and then paste it into your spreadsheet.</li>
+</ol>
+<p>Keyboard shortcut: <strong>Alt+Shift+T</strong> opens the extension.</p>
+
+<div class="two">
+  <div>
+    <h3>Free</h3>
+    <ul class="plain"><li>Finds every real data table and skips tables used only for page layout</li><li>CSV that opens correctly in Excel, including accents and non-Latin alphabets</li><li>Copy to the clipboard and paste into Google Sheets or Excel</li><li>Merged cells are filled in, so every row has the same columns</li><li>Highlight a table on the page before you export it</li></ul>
+  </div>
+  <div>
+    <h3>Pro, a one-time US$9 (coming soon)</h3>
+    <ul class="plain"><li>Excel files (.xlsx) with bold headers and numbers stored as numbers</li><li>All tables on a page in one workbook, one sheet per table</li><li>Collect a table that continues over several pages into one file</li></ul>
+    <p>Free features stay free. <a href="../#pricing">About Pro</a></p>
+  </div>
+</div>
+
+<h2>Questions</h2>
+<dl class="faq">
+<dt>How do I copy a table from a website into Excel or Google Sheets?</dt>
+<dd>Open the page, click the Table Export icon and press Copy next to the table you want. Then click a cell in your spreadsheet and paste. Rows and columns arrive exactly as on the page.</dd>
+<dt>The table has merged cells. Will the columns still line up?</dt>
+<dd>Yes. A cell that spans several rows or columns is repeated in each position it covers, so the exported table is a clean grid.</dd>
+<dt>Why does it say that no tables were found?</dt>
+<dd>Some sites draw their tables without real table elements, and some show them inside an embedded frame. Those cannot be read yet. If a table you need is not found, send us the page address and we will look at it.</dd>
+<dt>How are numbers handled in the Excel export?</dt>
+<dd>Numbers are stored as numbers, so sums and sorting work. The extension reads 1,200.50 on English pages and 1.200,50 on pages in languages that use a decimal comma. Values with leading zeros, such as postcodes and part numbers, stay as text so that nothing is lost.</dd>
+<dt>Is my data sent anywhere?</dt>
+<dd>No. The page is read inside your browser, and only when you click the icon. There is no account, no analytics and no upload.</dd>
+</dl>
+
+<h2>More tools from Kitebox Labs</h2>
+<div class="others">
+<a class="t-page" href="../page-to-markdown/"><strong>Page to Markdown</strong></a>
+<a class="t-chat" href="../ai-chat-export/"><strong>AI Chat Export</strong></a>
+</div>
+</main>
+<footer class="wrap">
+  <span>© 2026 Kitebox Labs, Karmiel, Israel</span>
+  <a href="../#privacy">Privacy</a><a href="../#terms">Terms</a><a href="../#refunds">Refunds</a><a href="mailto:kitebox.labs@gmail.com">kitebox.labs@gmail.com</a>
+</footer>
+</body>
+</html>

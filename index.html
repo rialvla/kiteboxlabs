@@ -3,52 +3,131 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Kitebox Labs — small browser tools that just work</title>
-<meta name="description" content="Kitebox Labs makes simple, private browser extensions: export tables to Excel, save AI chats, clip pages to Markdown.">
-<style>
-:root{--bg:#fff;--fg:#1d2330;--mu:#5d6577;--ln:#e4e7ee;--ac:#2f6fed}
-@media(prefers-color-scheme:dark){:root{--bg:#14171d;--fg:#e8ebf2;--mu:#9aa2b4;--ln:#2b303b;--ac:#6f9bf7}}
-body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 system-ui,-apple-system,"Segoe UI",sans-serif}
-.w{max-width:760px;margin:0 auto;padding:0 20px}
-header{padding:40px 0 8px}h1{font-size:32px;margin:0}h2{margin-top:48px;font-size:22px}h3{margin:20px 0 4px;font-size:17px}
-p,li{color:var(--mu)}a{color:var(--ac)}nav a{margin-right:16px;font-size:14px}
-.card{border:1px solid var(--ln);border-radius:12px;padding:16px 18px;margin:12px 0}
-footer{border-top:1px solid var(--ln);margin-top:56px;padding:20px 0 40px;font-size:14px;color:var(--mu)}
-</style>
+<title>Kitebox Labs — small browser tools that turn web pages into files</title>
+<meta name="description" content="Free, private browser extensions for Chrome, Edge and Firefox: export web tables to CSV, copy pages as Markdown, save AI chats as Markdown. Everything runs in your browser.">
+<link rel="canonical" href="https://rialvla.github.io/kiteboxlabs/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Kitebox Labs">
+<meta property="og:title" content="Kitebox Labs — small browser tools that turn web pages into files">
+<meta property="og:description" content="Free, private browser extensions for Chrome, Edge and Firefox: export web tables to CSV, copy pages as Markdown, save AI chats as Markdown. Everything runs in your browser.">
+<meta property="og:url" content="https://rialvla.github.io/kiteboxlabs/">
+<meta property="og:image" content="https://rialvla.github.io/kiteboxlabs/assets/logo.png">
+<link rel="icon" href="assets/logo-256.png">
+<link rel="preload" href="assets/bricolage-grotesque.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/site.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Kitebox Labs","url":"https://rialvla.github.io/kiteboxlabs/","logo":"https://rialvla.github.io/kiteboxlabs/assets/logo.png","email":"kitebox.labs@gmail.com"}</script>
 </head>
-<body><div class="w">
-<header><h1>Kitebox Labs</h1><p>Small browser tools that just work. Private by design: your data stays in your browser.</p>
-<nav><a href="#products">Products</a><a href="#pricing">Pricing</a><a href="#privacy">Privacy</a><a href="#terms">Terms</a><a href="#refunds">Refunds</a><a href="#contact">Contact</a></nav></header>
+<body>
+<header class="top wrap">
+  <a class="brand" href="./"><img src="assets/logo-256.png" width="34" height="34" alt="">Kitebox Labs</a>
+  <nav><a href="./#products">Tools</a><a href="./#pricing">Pricing</a><a href="./#privacy">Privacy</a><a href="./#contact">Contact</a></nav>
+</header>
+<main class="wrap">
+<section class="hero">
+  <div>
+    <h1>Small browser tools that turn web pages into files.</h1>
+    <p>Tables to CSV, pages to Markdown, AI chats to Markdown. One click, and nothing leaves your browser.</p>
+  </div>
+  <div class="proof" aria-label="Example: a table on a web page becomes a CSV file">
+    <table>
+      <tr><th>River</th><th>Continent</th><th>Length (km)</th></tr>
+      <tr><td>Nile</td><td>Africa</td><td>6,650</td></tr>
+      <tr><td>Amazon</td><td>South America</td><td>6,400</td></tr>
+      <tr><td>Yangtze</td><td>Asia</td><td>6,300</td></tr>
+    </table>
+    <div class="turn">One click on Table Export</div>
+    <pre class="file"><b>Longest rivers.csv</b>
+River,Continent,Length (km)
+Nile,Africa,"6,650"
+Amazon,South America,"6,400"
+Yangtze,Asia,"6,300"</pre>
+  </div>
+</section>
 
-<h2 id="products">Products</h2>
-<div class="card" id="table-export"><h3>Table Export</h3><p>Export any table on a web page to CSV or Excel in one click, copy it to Google Sheets, or collect a table across many pages.</p></div>
-<div class="card" id="ai-chat-export"><h3>AI Chat Export</h3><p>Save your AI conversations as Markdown, Word or PDF in one click.</p></div>
-<div class="card" id="page-markdown"><h3>Page to Markdown</h3><p>Turn any web page or selection into clean Markdown for notes and AI prompts.</p></div>
-<p>Available for Chrome, Microsoft Edge and Firefox.</p>
+<h2 id="products">Tools</h2>
+<p>Free for Chrome, Microsoft Edge and Firefox. Each tool does one job and asks for no account.</p>
+<div class="tools">
+<section class="tool t-table" id="table-export">
+  <div>
+    <h3>Table Export</h3>
+    <p>Copy any table on a web page, or save it as a CSV file. Paste it straight into Google Sheets or Excel.</p>
+    <div class="stores"><a class="btn" href="https://chromewebstore.google.com/detail/hhfpalogcbonjkoplmdikkgolelgajjc">Add to Chrome</a><a class="btn alt" href="https://microsoftedge.microsoft.com/addons/detail/emdhohpbhjjjipbeofofnglcaibgfpml">Add to Edge</a><a class="btn alt" href="https://addons.mozilla.org/firefox/addon/kitebox-table-export/">Add to Firefox</a></div>
+    <a class="more" href="./table-export/">How to use Table Export</a>
+  </div>
+  <pre class="file"><b>Average discharge.csv</b>
+River,Discharge (m³/s),Outflow
+Amazon,&quot;209,000&quot;,Atlantic Ocean
+Congo,&quot;41,200&quot;,Atlantic Ocean
+Yangtze,&quot;30,166&quot;,East China Sea</pre>
+</section>
+<section class="tool t-page" id="page-markdown">
+  <div>
+    <h3>Page to Markdown</h3>
+    <p>Turn an article, or just the part you selected, into clean Markdown for AI chats, notes and Obsidian.</p>
+    <div class="stores"><a class="btn" href="https://chromewebstore.google.com/detail/cnmigemglknhhenocihimppigihnjdkp">Add to Chrome</a><a class="btn alt" href="https://microsoftedge.microsoft.com/addons/detail/hfkippdgafjjonhkjkijcbaccekfpifb">Add to Edge</a><a class="btn alt" href="https://addons.mozilla.org/firefox/addon/kitebox-page-to-markdown/">Add to Firefox</a></div>
+    <a class="more" href="./page-to-markdown/">How to use Page to Markdown</a>
+  </div>
+  <pre class="file"><b>How Rivers Shape Valleys.md</b>
+# How Rivers Shape Valleys
+
+Source: &lt;https://example.com/rivers&gt;
+
+Rivers carve valleys over **millions of years**
+through erosion, transport and deposition.
+
+## Three stages</pre>
+</section>
+<section class="tool t-chat" id="ai-chat-export">
+  <div>
+    <h3>AI Chat Export</h3>
+    <p>Save a conversation from ChatGPT, Claude or Gemini as Markdown, with code, tables and formulas intact.</p>
+    <div class="stores"><a class="btn" href="https://addons.mozilla.org/firefox/addon/kitebox-ai-chat-export/">Add to Firefox</a><span class="soon">Chrome and Edge: coming soon</span></div>
+    <a class="more" href="./ai-chat-export/">How to use AI Chat Export</a>
+  </div>
+  <pre class="file"><b>Sorting a list of people.md</b>
+# Sorting a list of people
+
+## You
+
+How do I sort a list of people by age?
+
+## ChatGPT
+
+Use `sorted` with a key function:
+
+```python
+people = sorted(people, key=lambda p: p[&quot;age&quot;])
+```</pre>
+</section>
+</div>
 
 <h2 id="pricing">Pricing</h2>
-<p>Every extension is free to use. An optional <b>Pro</b> upgrade unlocks extra features for a one-time payment of <b>US$9</b> per extension. No subscription. Payments are processed by our reseller and Merchant of Record, who handles taxes and receipts.</p>
+<p>Every tool is free to use. An optional <strong>Pro</strong> upgrade will add extra features for a one-time payment of <strong>US$9</strong> per tool. No subscription. Payments will be processed by our reseller and Merchant of Record, who handles taxes and receipts.</p>
+<p>Pro is not on sale yet. Everything that is free today stays free. For a note when Pro opens, <a href="mailto:kitebox.labs@gmail.com?subject=Notify%20me%20about%20Pro">send us an email</a>.</p>
 
-<h2 id="privacy">Privacy Policy</h2>
-<p>Last updated: 23 October 2026.</p>
-<ul>
-<li>Our extensions process page content <b>locally in your browser</b>, only when you click the extension. We do not collect, store, sell or transfer your browsing data, page content or AI conversations.</li>
-<li>We do not use analytics, ads or tracking.</li>
-<li>Settings are saved in your browser's extension storage.</li>
-<li>If you buy Pro, the extension sends your license key to our payment provider only to verify it. Your payment details are handled by the payment provider, never by us.</li>
-<li>If you email us, we use your email only to reply.</li>
+<h2 id="privacy">Privacy policy</h2>
+<p>Last updated: 11 November 2026.</p>
+<ul class="plain">
+<li>Our extensions process page content <strong>locally in your browser</strong>, and only when you click the extension. We do not collect, store, sell or transfer your browsing data, page content or AI conversations.</li>
+<li>We do not use analytics, ads or tracking, in the extensions or on this website. The website sets no cookies and loads nothing from third parties. It is hosted on GitHub Pages, which keeps ordinary server logs.</li>
+<li>Your settings, and a simple count of exports used to ask once whether you would like to rate the extension, are saved in your browser’s extension storage and never leave it.</li>
+<li>If you buy Pro, the extension sends your license key to our payment provider to verify it, and nothing else. Your payment details are handled by the payment provider, never by us.</li>
+<li>If you email us, we use your address only to reply.</li>
 </ul>
 <p>The use of information received from browser APIs adheres to the Chrome Web Store User Data Policy, including the Limited Use requirements.</p>
 
-<h2 id="terms">Terms of Use</h2>
-<p>The extensions are provided "as is", without warranty of any kind. A Pro license is personal and may be used on your own browsers. Do not use the extensions to break the terms of the websites you use them on. We may update the extensions and these terms; continued use means you accept the changes.</p>
+<h2 id="terms">Terms of use</h2>
+<p>The extensions are provided “as is”, without warranty of any kind. A Pro license is personal and may be used on your own browsers. Do not use the extensions to break the terms of the websites you use them on. We may update the extensions and these terms; continued use means you accept the changes.</p>
 
 <h2 id="refunds">Refunds</h2>
-<p>Not happy with Pro? Email us within 14 days of purchase for a full refund. No questions asked.</p>
+<p>Not happy with Pro? Email us within 14 days of the purchase for a full refund. No questions asked.</p>
 
 <h2 id="contact">Contact</h2>
-<p>Email: <a href="mailto:kitebox.labs@gmail.com">kitebox.labs@gmail.com</a></p>
-
-<footer>© 2026 Kitebox Labs · Karmiel, Israel</footer>
-</div></body>
+<p>Questions, a page where a tool does not work, or an idea: <a href="mailto:kitebox.labs@gmail.com">kitebox.labs@gmail.com</a>.</p>
+</main>
+<footer class="wrap">
+  <span>© 2026 Kitebox Labs, Karmiel, Israel</span>
+  <a href="./#privacy">Privacy</a><a href="./#terms">Terms</a><a href="./#refunds">Refunds</a><a href="mailto:kitebox.labs@gmail.com">kitebox.labs@gmail.com</a>
+</footer>
+</body>
 </html>
